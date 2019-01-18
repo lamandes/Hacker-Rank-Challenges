@@ -10,6 +10,7 @@ namespace Day12Inheritance
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello Word!");
         }
     }
 }
