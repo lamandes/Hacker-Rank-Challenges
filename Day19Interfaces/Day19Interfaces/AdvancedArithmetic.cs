@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Day19Interfaces
 {
-    interface AdvancedArithmetic
+    public interface AdvancedArithmetic
     {
         int divisorSum(int n);
     }
