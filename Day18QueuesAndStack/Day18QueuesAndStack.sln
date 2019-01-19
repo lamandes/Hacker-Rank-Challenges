@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day18QueuesAndStack", "Day18QueuesAndStack\Day18QueuesAndStack.csproj", "{BFB1293E-0528-4F21-8A6B-AC910FEE128F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFB1293E-0528-4F21-8A6B-AC910FEE128F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB1293E-0528-4F21-8A6B-AC910FEE128F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB1293E-0528-4F21-8A6B-AC910FEE128F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB1293E-0528-4F21-8A6B-AC910FEE128F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68F1BA8A-9A49-45B0-B327-ADA71936C203}
+	EndGlobalSection
+EndGlobal
