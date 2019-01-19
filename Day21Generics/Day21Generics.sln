@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day21Generics", "Day21Generics\Day21Generics.csproj", "{520C8481-D998-49D0-BE8E-5A6D610BC35F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{520C8481-D998-49D0-BE8E-5A6D610BC35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520C8481-D998-49D0-BE8E-5A6D610BC35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520C8481-D998-49D0-BE8E-5A6D610BC35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520C8481-D998-49D0-BE8E-5A6D610BC35F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD12E2C7-3127-4EC4-9E5D-82D7228EAB2A}
+	EndGlobalSection
+EndGlobal
