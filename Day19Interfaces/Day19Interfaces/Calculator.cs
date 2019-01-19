@@ -10,7 +10,15 @@ namespace Day19Interfaces
     {
         public int divisorSum(int n)
         {
-            return 0;
+            int sum = 0;
+            for (int divisor = 1; divisor < n + 1; divisor++)
+            {
+                if (n % divisor == 0)
+                {
+                    sum += divisor;
+                }
+            }
+            return sum;
         }
     }
 }
