@@ -10,7 +10,26 @@ namespace Day22BinarySearchTree
     {
         static int getHeight(Node root)
         {
-            //Write your code here
+            int leftHeight = 0;
+            int rightHeight = 0;
+            //Recursive equation for 1 + max(height(leftchild), height(rightchild))
+            if (root.left != null)
+            {
+                leftHeight = 1 + getHeight(root.left);
+            }
+            if (root.right != null)
+            {
+                rightHeight = 1 + getHeight(root.right);
+            }
+            
+            if(leftHeight > rightHeight)
+            {
+                return leftHeight;
+            }
+            else
+            {
+                return rightHeight;
+            }
         }
 
         static Node insert(Node root, int data)
@@ -37,6 +56,7 @@ namespace Day22BinarySearchTree
         }
         static void Main(String[] args)
         {
+            //Create a null node as root.
             Node root = null;
             int T = Int32.Parse(Console.ReadLine());
             while (T-- > 0)
