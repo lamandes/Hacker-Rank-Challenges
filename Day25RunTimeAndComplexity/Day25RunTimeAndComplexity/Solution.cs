@@ -7,46 +7,46 @@ class Solution
     {
         int T = int.Parse(Console.ReadLine());
         int[] arr = new int[T];
-        int i = 0;
+        int add = 0;
         while (T-- > 0)
         {
-            arr[i] = int.Parse(Console.ReadLine());
-            i++;
+            arr[add] = int.Parse(Console.ReadLine());
+            add++;
         }
-
+        //Using 6k ± 1 optimization, divide by 2, 3, 5, 7, 11, 13 etc... up to square root of number
         for (int loop = 0; loop < arr.Length; loop++)
         {
             int curNum = arr[loop];
-            bool notPrime = false;
-            int numOfDivisible = 0;
-            int[] divisor = new int[2];
-            int index = 0;
-            for (int prime = 1; prime < curNum + 1; prime++)
+            bool bPrime = true;
+            if (curNum <= 3)
             {
-                if (curNum % prime == 0)
-                {
-                    divisor[index] = prime;
-                    numOfDivisible++;
-                    if (index < 1)
-                    {
-                        index++;
-                    }
-                }
-                if (numOfDivisible > 2)
-                {
-                    //Once there is more than 3 divisor break the loop and print not prime immediately
-                    notPrime = true;
-                    break;
-                }
-                
+                bPrime = curNum > 1;
             }
-            if (notPrime || !(divisor[0] == 1 && divisor[1] == curNum))
+            else if (curNum % 2 == 0 || curNum % 3 == 0)
             {
-                Console.WriteLine("Not prime");
+                bPrime = false;
             }
             else
             {
+                int i = 5;
+                //int squareRootOfNum = Convert.ToInt32(Math.Ceiling(Math.Sqrt(curNum)));
+                while ((i * i) <= curNum)
+                {
+                    if ((curNum % i == 0) || (curNum % (i + 2) == 0))
+                    {
+                        bPrime = false;
+                        break;
+                    }
+                    i += 6;
+                }
+            }
+            if (bPrime)
+            {
                 Console.WriteLine("Prime");
+            }
+            else
+            {
+                Console.WriteLine("Not Prime");
             }
             
         }
