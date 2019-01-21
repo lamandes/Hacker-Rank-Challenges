@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day25RunTimeAndComplexity", "Day25RunTimeAndComplexity\Day25RunTimeAndComplexity.csproj", "{B2433C36-2244-4AE0-901B-E9C23BC09845}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2433C36-2244-4AE0-901B-E9C23BC09845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2433C36-2244-4AE0-901B-E9C23BC09845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2433C36-2244-4AE0-901B-E9C23BC09845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2433C36-2244-4AE0-901B-E9C23BC09845}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCF08D68-37AB-4F5C-AE87-9F9310E254DE}
+	EndGlobalSection
+EndGlobal
