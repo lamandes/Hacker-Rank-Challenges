@@ -11,7 +11,20 @@ namespace Day24RemoveDuplicateLinkedList
 
         public static Node removeDuplicates(Node head)
         {
-
+            Node cur = head;
+            while(cur.next != null)
+            {
+                //1. Check if current node is same as next node
+                if (cur.data == cur.next.data)
+                {
+                    cur.next = cur.next.next;
+                    cur = head;                 //restart to eliminate 3 or more duplicates
+                    continue;               
+                }
+                //2. Go to next node
+                cur = cur.next;
+            }
+            return head;
         }
 
         public static Node insert(Node head, int data)
